@@ -62,6 +62,7 @@ label {
 
 .esqueceu {
     color: #F1641F;
+    cursor: pointer;
 }
 
 .entrar {
@@ -76,6 +77,7 @@ label {
     background-color: #F1641F;
     font-size: 18px;
     font-weight: bold;
+    cursor: pointer;
 }
 
 .entrar:hover {
