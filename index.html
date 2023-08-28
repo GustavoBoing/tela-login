@@ -5,16 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="styles.css">
     <title>Tela de login</title>
-    <script>
-        function togglePasswordVisibility() {
-            var passwordInput = document.getElementById("senha");
-            if (passwordInput.type === "senha") {
-                passwordInput.type = "text";
-            } else {
-                passwordInput.type = "senha";
-            }
-        }
-    </script>
 </head>
 <body>
     <div class="background-container">
@@ -25,11 +15,11 @@
                     <p></p>
                 </div>
                 <p>
-                    <p><label class="label-email" for="user">Email</label></p>
+                    <p><label class="label-email" for="usuario">Email</label></p>
                     <input class="email" type="text" name="user" placeholder="Digite seu email" required>
                 </p>
                 <p>
-                    <p><label for="senha">Senha</label></p>
+                    <p><label for="password">Senha</label></p>
                     <input class="senha" type="password" name="senha" placeholder="Digite sua senha" required>
                 </p>
                 <p>
