@@ -5,29 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type='text/css' href="styles.css">
     <title>Tela de login</title>
+    <script>
+        function togglePasswordVisibility() {
+            var passwordInput = document.getElementById("senha");
+            if (passwordInput.type === "senha") {
+                passwordInput.type = "text";
+            } else {
+                passwordInput.type = "senha";
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="background-container">
         <div class="background-image"></div>
-        <div class="content">
-            <div class="imagem-logo">
-                <p></p>
+        <form action="entrar.php" method="post">
+            <div class="content">
+                <div class="imagem-logo">
+                    <p></p>
+                </div>
+                <p>
+                    <p><label class="label-email" for="user">Email</label></p>
+                    <input class="email" type="text" name="user" placeholder="Digite seu email" required>
+                </p>
+                <p>
+                    <p><label for="senha">Senha</label></p>
+                    <input class="senha" type="password" name="senha" placeholder="Digite sua senha" required>
+                </p>
+                <p>
+                    <label class="esqueceu" for="esqueceu">Esqueceu sua senha?</label>
+                </p>
+                <p>
+                    <button class="entrar">Entrar</button>
+                </p>
             </div>
-            <p>
-                <p><label class="label-email" for="email">Email</label></p>
-                <input class="email" type="text" placeholder="Digite seu email">
-            </p>
-            <p>
-                <p><label for="senha">Senha</label></p>
-                <input class="senha" type="password" placeholder="Digite sua senha">
-            </p>
-            <p>
-                <label class="esqueceu" for="esqueceu">Esqueceu sua senha?</label>
-            </p>
-            <p>
-                <button class="entrar">Entrar</button>
-            </p>
-        </div>
+        </form>
     </div>
 </body>
 </html>

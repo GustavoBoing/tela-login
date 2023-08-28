@@ -1,7 +1,9 @@
-CREATE DATABASE login;
+CREATE DATABASE teste_login;
 
-CREATE TABLE create table tbl_usuario (
-    id INT AUTO_INCREMENT NOT NULL,
+use teste_login;
+
+CREATE TABLE tbl_usuario (
+    id INT AUTO_INCREMENT PRIMARY KEY NOT NULL,
     user VARCHAR (40) NOT NULL,
     senha VARCHAR (8) NOT NULL
 );
